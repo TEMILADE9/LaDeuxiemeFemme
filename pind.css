@@ -87,7 +87,7 @@ header {
     min-height: 98vh; /* desktop, selon le cahier des charges */
     background:
         linear-gradient(rgba(40, 10, 30, 0.55), rgba(40, 10, 30, 0.55)),
-        url("resto.lnk") center/cover no-repeat;
+        url("divine.png") center/cover no-repeat;
     color: var(--blanc);
     display: flex;
     flex-direction: column;

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Deuxième Femme | Restaurant</title>
+    <link rel="stylesheet" href="pind.css">
+</head>
+<body>
+
+    <!-- ===================== HEADER + NAV ===================== -->
+    <header id="accueil">
+        <nav>
+            <div class="container nav-content">
+                <span class="logo">La Deuxième Femme</span>
+                <button id="burger" class="burger" aria-label="Ouvrir le menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul id="nav-links">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#menu">Notre menu</a></li>
+                    <li><a href="#offres">Offres spéciales</a></li>
+                    <li><a href="#reservation">Réservations</a></li>
+                    <li><a href="#galerie">Galerie</a></li>
+                    <li><a href="#temoignages">Témoignages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <h1>LA DEUXIÈME FEMME</h1>
+            <p class="slogan">Là où ton mari trouve la paix du cœur</p>
+            <div class="cta">
+                <a href="#reservation" class="btn btn-primary">Réserver</a>
+                <a href="#menu" class="btn btn-outline">Commander</a>
+                <a href="#contact" class="btn btn-outline">Contacter</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===================== MENU ===================== -->
+    <section id="menu" class="section">
+        <div class="container">
+            <h2 class="section-title">Notre Menu</h2>
+            <p class="section-subtitle">Nos plats phares, préparés avec passion</p>
+
+            <div class="plats-phares">
+                <article class="plat">
+                    <img src="watche.png" alt="Watché au frétin" loading="lazy">
+                    <h3>Watché au frétin</h3>
+                    <p class="description">Un mélange traditionnel de riz et de haricots, servi avec du gari frit, une sauce à l'huile de palme parfumée et du fretin croustillant.</p>
+                    <p class="prix">1500 fCFA</p>
+                </article>
+
+                <article class="plat">
+                    <img src="amiwo.png" alt="Amiwo au poulet" loading="lazy">
+                    <h3>Amiwo au poulet</h3>
+                    <p class="description">Pâte de maïs onctueuse à la sauce tomate légèrement pimentée, servie avec un poulet braisé tendre et savoureux.</p>
+                    <p class="prix">3500 fCFA</p>
+                </article>
+
+                <article class="plat">
+                    <img src="agou.png" alt="Agou avec sauce d'arachide (gbôta)" loading="lazy">
+                    <h3>Agou avec sauce d'arachide (gbôta)</h3>
+                    <p class="description">Igname pilée, lisse et onctueuse, accompagnée d'une riche sauce d'arachide parfumée.</p>
+                    <p class="prix">3000 fCFA</p>
+                </article>
+            </div>
+
+            <button id="btn-menu-complet" class="btn btn-secondary">Voir le menu complet</button>
+        </div>
+    </section>
+
+    <!-- Pop-up Menu complet (boissons, desserts, menus spéciaux) -->
+    <div id="popup-menu" class="popup">
+        <div class="popup-content">
+            <button id="fermer-popup" class="fermer" aria-label="Fermer">&times;</button>
+            <h3>Menu complet</h3>
+
+            <h4>Menus spéciaux</h4>
+            <ul>
+                <li>Menu découverte (3 plats au choix) — 8000 fCFA</li>
+                <li>Menu enfant — 2500 fCFA</li>
+            </ul>
+
+            <h4>Boissons</h4>
+            <ul>
+                <li>Jus de bissap — 1000 fCFA</li>
+                <li>Jus de gingembre — 1000 fCFA</li>
+                <li>Eau minérale — 500 fCFA</li>
+            </ul>
+
+            <h4>Desserts</h4>
+            <ul>
+                <li>Salade de fruits — 1500 fCFA</li>
+                <li>Beignets sucrés — 1000 fCFA</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ===================== OFFRES SPÉCIALES ===================== -->
+    <section id="offres" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Offres spéciales</h2>
+            <div class="offres-grid">
+                <div class="offre-card">
+                    <h3>Happy Hour</h3>
+                    <p>-20% sur toutes les boissons, du lundi au jeudi de 17h à 19h.</p>
+                </div>
+                <div class="offre-card">
+                    <h3>Menu du midi</h3>
+                    <p>Un plat + une boisson à 2500 fCFA, du lundi au vendredi.</p>
+                </div>
+                <div class="offre-card">
+                    <h3>Anniversaire</h3>
+                    <p>Un dessert offert pour toute réservation le jour de votre anniversaire.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== GALERIE ===================== -->
+    <section id="galerie" class="section">
+        <div class="container">
+            <h2 class="section-title">Galerie</h2>
+            <div class="galerie-grid">
+                <img src="plata.png" alt="Plat du restaurant" loading="lazy">
+                <img src="intv.png" alt="Intérieur du restaurant" loading="lazy">
+                <img src="intres.png" alt="Équipe du restaurant" loading="lazy">
+                <img src="platb.png" alt="Plat du restaurant" loading="lazy">
+                <img src="amb.png" alt="Ambiance du restaurant" loading="lazy">
+                <img src="platc.png" alt="Plat du restaurant" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== RÉSERVATION ===================== -->
+    <section id="reservation" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Réserver une table</h2>
+            <form id="form-reservation" class="form">
+                <div class="form-group">
+                    <label for="nom">Nom et prénom</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="heure">Heure</label>
+                        <input type="time" id="heure" name="heure" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="personnes">Nombre de personnes</label>
+                    <input type="number" id="personnes" name="personnes" min="1" max="20" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="telephone">Téléphone</label>
+                        <input type="tel" id="telephone" name="telephone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="commentaires">Commentaires ou demandes spéciales</label>
+                    <textarea id="commentaires" name="commentaires" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Confirmer la réservation</button>
+                <p id="message-reservation" class="message"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===================== TÉMOIGNAGES ===================== -->
+    <section id="temoignages" class="section">
+        <div class="container">
+            <h2 class="section-title">Témoignages clients</h2>
+
+            <div class="slider" id="slider-temoignages">
+                <div class="slide active">
+                    <img src="ROD.jpg" alt="Photo de Aïcha B.">
+                    <p class="texte">"Un accueil chaleureux et des plats qui rappellent la vraie cuisine béninoise. Je recommande !"</p>
+                    <p class="auteur">Ola B.</p>
+                </div>
+                <div class="slide">
+                    <img src="MOM.jpg" alt="Photo de Bertrand K.">
+                    <p class="texte">"Le watché au frétin est juste parfait. Service rapide et souriant."</p>
+                    <p class="auteur">Maman Rodolphe</p>
+                </div>
+                <div class="slide">
+                    <img src="ra.png" alt="Photo de Sandrine A.">
+                    <p class="texte">"Cadre agréable, idéal pour un déjeuner en famille. On y retourne !"</p>
+                    <p class="auteur">Sandrine A.</p>
+                </div>
+            </div>
+
+            <div class="slider-dots" id="slider-dots"></div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact-grid">
+                <div class="contact-infos">
+                    <p>📍 <strong>Adresse :</strong> Akassato, Cotonou, Bénin</p>
+                    <p>📞 <strong>Téléphone :</strong> <a href="tel:+2290162287166">+229 01 62 28 71 66</a></p>
+                    <p>✉️ <strong>Email :</strong> <a href="mailto:gogohungar@gmail.com">gogohungar@gmail.com</a></p>
+                </div>
+
+                <form id="form-contact" class="form">
+                    <div class="form-group">
+                        <label for="contact-nom">Prénom & Nom</label>
+                        <input type="text" id="contact-nom" name="nom" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-tel">Téléphone</label>
+                            <input type="tel" id="contact-tel" name="telephone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-objet">Objet</label>
+                        <input type="text" id="contact-objet" name="objet" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                    <p id="message-contact" class="message"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h3>La Deuxième Femme</h3>
+                <p>Là où ton mari trouve la paix du cœur.</p>
+            </div>
+            <div>
+                <h4>Liens utiles</h4>
+                <ul>
+                    <li><a href="#menu">Notre menu</a></li>
+                    <li><a href="#reservation">Réservation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Réseaux sociaux</h4>
+                <ul class="reseaux">
+                    <li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Légal</h4>
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 La Deuxième Femme. Tous droits réservés.</p>
+    </footer>
+
+    <script src="pind.js"></script>
+</body>
+</html>
